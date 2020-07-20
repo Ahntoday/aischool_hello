@@ -8,18 +8,24 @@
   <body>
     <form action="https://server.ai-school.com" method="POST">
       <input name="userid" placeholder="아이디를 입력하세용" type="text" />
+      <br />
       <input
         name="userpw"
         placeholder="비밀번호를 입력하세용"
         type="password"
       />
+      <br />
       <label for="pwhint">비밀번호 힌트 질문</label>
       <select id="pwhint" name="pwhint">
         <option value="hint_teacher">가장 기억에 남는 선생님 성함</option>
         <option value="hint_hobby">나의 취미</option>
         <option value="hint_secret">나만 아는 비밀</option>
       </select>
-      <textarea name="introduce" cols="50" rows="10">자기소개 입력</textarea>
+      <br />
+      <label for="introduce">자기소개를 입력하세요</label>
+      <br />
+      <textarea id="introduce" name="introduce" cols="50" rows="10"></textarea>
+      <br />
       <button type="submit">제출!</button>
     </form>
   </body>
