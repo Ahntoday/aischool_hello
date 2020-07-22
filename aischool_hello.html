@@ -4,29 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="aischool_hello.css" />
   </head>
   <body>
     <form action="https://server.ai-school.com" method="POST">
-      <input name="userid" placeholder="아이디를 입력하세용" type="text" />
+      <input
+        id="userid"
+        name="userid"
+        placeholder="아이디를 입력하세용"
+        type="text"
+      />
+      <br />
+      <br />
       <br />
       <input
+        id="userpw"
         name="userpw"
         placeholder="비밀번호를 입력하세용"
         type="password"
       />
       <br />
-      <label for="pwhint">비밀번호 힌트 질문</label>
+      <br />
+      <label id="label_pwhint" for="pwhint">비밀번호 힌트 질문</label>
       <select id="pwhint" name="pwhint">
         <option value="hint_teacher">가장 기억에 남는 선생님 성함</option>
         <option value="hint_hobby">나의 취미</option>
         <option value="hint_secret">나만 아는 비밀</option>
       </select>
       <br />
-      <label for="introduce">자기소개를 입력하세요</label>
+      <br />
+      <label id="label_introduce" for="introduce">자기소개를 입력하세요</label>
       <br />
       <textarea id="introduce" name="introduce" cols="50" rows="10"></textarea>
       <br />
-      <button type="submit">제출!</button>
+      <br />
+      <button id="submit_button" type="submit">제출!</button>
     </form>
   </body>
 </html>
